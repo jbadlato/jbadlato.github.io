@@ -1,0 +1,22 @@
+body {
+	background-image: url("img/stone.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 100%;
+}
+
+#title_section {
+	background: rgb(150,150,150);
+	background: rgba(150,150,150,0.75);
+	text-align: center;
+}
+
+#mypic {
+	width: 30%;
+	height: 30%;
+}
+
+.tab-pane:not(.active) {
+    display: none;
+}

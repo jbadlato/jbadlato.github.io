@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Joe Badlato</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<nav id="header" class="navbar navbar-default">
+				<ul class="nav navbar-nav">
+					<li><a href="#bio_section">Bio</a></li>
+					<li><a href="#projects_section">Projects</a></li>
+					<li><a href="#contact_section">Contact Me</a></li>
+				</ul>
+			</nav>
+			<div id="title_section" class="jumbotron">
+				<img id="mypic" class="img-circle" src="img/headshot.jpg"/>
+				<h1>Joe Badlato</h1>
+				<div id="profile_links">
+					<a href="https://github.com/jbadlato" class="profile_link"><img src="img/github.png"/></a>
+					<a href="https://www.linkedin.com/in/jbadlato/" class="profile_link"><img src="img/linkedin.png"/></a>
+				</div>
+			</div>
+		<div class="container-fluid">
+			</div>
+					<div id="bio_section" class="jumbotron">
+				<h2>About me</h2>
+			</div>
+			<div id="projects_section" class="jumbotron">
+				<h2>Projects</h2>
+				<ul class="nav nav-pills">
+					<li class="active"><a data-toggle="pill" href="#ochem_buddy">OChem Buddy</a></li>
+					<li><a data-toggle="pill" href="#markov_rankings">Markov Sports Rankings</a></li>
+					<li><a data-toggle="pill" href="#runnersDB">RunnersDB</a></li>
+				</ul>
+				<div class="tab-content">
+					<div id="ochem_buddy" class="tab-pane fade in active">
+						<h3>OChem Buddy</h3>
+						<p></p>
+						<a href="https://github.com/jbadlato/OChemBuddy" class="profile_link"><img src="img/github.png"/></a>
+					</div>
+					<div id="markov_rankings" class="tab-pane fade">
+						<h3>Markov Sports Rankings</h3>
+
+						<a href="https://github.com/jbadlato/NCAA-Rankings" class="profile_link"><img src="img/github.png"/></a>
+					</div>
+					<div id="runnersDB" class="tab-pane fade">
+						<h3>RunnersDB</h3>
+
+						<a href="https://github.com/jbadlato/RunnersDB" class="profile_link"><img src="img/github.png"/></a>
+					</div>
+				</div>
+			</div>
+			<div id="contact_section" class="jumbotron">
+				<h2>Contact Me</h2>
+				<form class="form-horizontal" method="post" action="https://formspree.io/jbadlato@vt.edu" role="form">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="name">Name:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email" class="col-sm-2 control-label">Email:</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" name="_replyto" placeholder="Your email address" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message" class="col-sm-2 control-label">Message:</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="4" name="message" required></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+						</div>
+					</div>
+					<input type="hidden" name="_subject" value="Portfolio Contact Form" />
+				</form>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
