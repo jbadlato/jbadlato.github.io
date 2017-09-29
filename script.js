@@ -1,5 +1,6 @@
 $(function() {
   $('#contact_form').submit(function(e) {
+    e.preventDefault();
 	$.ajax({
 	    url: "https://formspree.io/jbadlato@vt.edu",
 	    method: "POST",
@@ -11,7 +12,7 @@ $(function() {
 	    },
 	    dataType: "json"
 	}).done(function(response) {
-	    $('#success_message').css('display', 'inline');
+	    $('#success_message').show();
 	    $('#contact_form').find("input[type=text], input[type=email], textarea").val("");
 	});
   });
