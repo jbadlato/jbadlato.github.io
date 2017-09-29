@@ -1,13 +1,17 @@
 $(function() {
   $('#contact_form').submit(function(e) {
-    e.preventDefault();
 	$.ajax({
 	    url: "https://formspree.io/jbadlato@vt.edu",
 	    method: "POST",
-	    data: { message: $('form').serialize() },
+	    data: { 
+	    	'_subject': 'Portfolio Contact Form',
+	    	name: $('#name').val(),
+	    	'_replyto': $('#email').val(),
+	    	message: $('#message').val()
+	    },
 	    dataType: "json"
 	}).done(function(response) {
-	    $('#form_message').style('display: inline');
+	    $('#success_message').css('display', 'inline');
 	    $('#contact_form').find("input[type=text], input[type=email], textarea").val("");
 	});
   });
