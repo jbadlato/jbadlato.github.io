@@ -17,6 +17,18 @@ body {
 	height: 30%;
 }
 
-.tab-pane:not(.active) {
-    display: none;
+.profile_link {
+	width: 5%;
+	height: 5%;
+	margin: 2%;
+}
+
+.project_title {
+	display: inline-block;
+}
+
+.source_code_link {
+	width: 3%;
+	height: 3%;
+	float: right;
 }

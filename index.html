@@ -12,7 +12,7 @@
 		<div class="container">
 			<nav id="header" class="navbar navbar-default">
 				<ul class="nav navbar-nav">
-					<li><a href="#bio_section">Bio</a></li>
+					<li><a href="#bio_section">About Me</a></li>
 					<li><a href="#projects_section">Projects</a></li>
 					<li><a href="#contact_section">Contact Me</a></li>
 				</ul>
@@ -21,17 +21,17 @@
 				<img id="mypic" class="img-circle" src="img/headshot.JPG"/>
 				<h1>Joe Badlato</h1>
 				<div id="profile_links">
-					<a href="https://github.com/jbadlato" class="profile_link"><img src="img/github.png"/></a>
-					<a href="https://www.linkedin.com/in/jbadlato/" class="profile_link"><img src="img/linkedin.png"/></a>
+					<a href="https://github.com/jbadlato"><img class="profile_link" src="img/github.png"/></a>
+					<a href="https://www.linkedin.com/in/jbadlato/"><img class="profile_link" src="img/linkedin.png"/></a>
 				</div>
 			</div>
 		<div class="container-fluid">
 			</div>
 					<div id="bio_section" class="jumbotron">
-				<h2>About me</h2>
+				<h1>About me</h1>
 			</div>
 			<div id="projects_section" class="jumbotron">
-				<h2>Projects</h2>
+				<h1>Projects</h1>
 				<ul class="nav nav-pills">
 					<li class="active"><a data-toggle="pill" href="#ochem_buddy">OChem Buddy</a></li>
 					<li><a data-toggle="pill" href="#markov_rankings">Markov Sports Rankings</a></li>
@@ -39,25 +39,34 @@
 				</ul>
 				<div class="tab-content">
 					<div id="ochem_buddy" class="tab-pane fade in active">
-						<h3>OChem Buddy</h3>
-						<p></p>
-						<a href="https://github.com/jbadlato/OChemBuddy" class="profile_link"><img src="img/github.png"/></a>
+						<h2 class="project_title">OChem Buddy</h2>
+						<a href="https://ochembuddy.herokuapp.com/">View Site</a>
+						<a href="https://github.com/jbadlato/OChemBuddy" class="profile_link"><img class="source_code_link" src="img/github.png" title="Source Code"/></a>
+						<p class="project_what"><b>What:</b> A study aid for organic chemistry students that names simple organic molecules.  </p>
+						<p class="project_why"><b>Why:</b> </p>
+						<p class="project_how"><b>How:</b> </p>
 					</div>
 					<div id="markov_rankings" class="tab-pane fade">
-						<h3>Markov Sports Rankings</h3>
-
-						<a href="https://github.com/jbadlato/NCAA-Rankings" class="profile_link"><img src="img/github.png"/></a>
+						<h2 class="project_title">Markov Sports Rankings</h2>
+						<a href="https://markov-rankings.herokuapp.com/">View Site</a>
+						<a href="https://github.com/jbadlato/NCAA-Rankings" class="profile_link"><img class="source_code_link" src="img/github.png" title="Source Code"/></a>
+						<p class="project_what"><b>What:</b> </p>
+						<p class="project_why"><b>Why:</b> </p>
+						<p class="project_how"><b>How:</b> </p>
 					</div>
 					<div id="runnersDB" class="tab-pane fade">
-						<h3>RunnersDB</h3>
-
-						<a href="https://github.com/jbadlato/RunnersDB" class="profile_link"><img src="img/github.png"/></a>
+						<h2 class="project_title">RunnersDB</h2>
+						<a href="https://runnersdb.herokuapp.com/">View Site</a>
+						<a href="https://github.com/jbadlato/RunnersDB" class="profile_link"><img class="source_code_link" src="img/github.png" title="Source Code"/></a>
+						<p class="project_what"><b>What:</b> </p>
+						<p class="project_why"><b>Why:</b> </p>
+						<p class="project_how"><b>How:</b> </p>
 					</div>
 				</div>
 			</div>
 			<div id="contact_section" class="jumbotron">
-				<h2>Contact Me</h2>
-				<form class="form-horizontal" method="post" action="https://formspree.io/jbadlato@vt.edu" role="form">
+				<h1>Contact Me</h1>
+				<form id="contact_form" class="form-horizontal">
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="name">Name:</label>
 						<div class="col-sm-10">
@@ -81,7 +90,7 @@
 							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
 						</div>
 					</div>
-					<input type="hidden" name="_subject" value="Portfolio Contact Form" />
+					<p id="form_message" class="alert alert-success" style="display: none">Your message has been sent!  We will be in touch shortly!</p>
 				</form>
 			</div>
 			<div id="footer">
