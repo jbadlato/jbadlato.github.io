@@ -37,6 +37,28 @@ body {
 	float: right;
 }
 
+.carousel {
+	width: 75%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.project_visuals {
+	overflow:auto;
+    display: flex;
+    align-items: center; 
+}
+
+.project_art {
+	text-align: center;
+}
+
+.project_art img {
+	width: 75%;
+}
+
 #footer {
 	color: white;
 }

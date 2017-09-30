@@ -20,7 +20,7 @@
 				</ul>
 			</nav>
 
-			<div id="title_section" class="jumbotron">
+			<div id="title_section" class="jumbotron col-sm-12">
 				<img id="mypic" class="img-circle" src="img/headshot.JPG"/>
 				<h1>Joe Badlato</h1>
 				<p>I'm a recent Virginia Tech grad with a diverse background and a passion for web development.</p>
@@ -30,11 +30,11 @@
 				</div>
 			</div>
 
-			<div id="bio_section" class="jumbotron">
+			<div id="bio_section" class="jumbotron col-sm-12">
 				<h1>About me</h1>
 			</div>
 
-			<div id="projects_section" class="jumbotron">
+			<div id="projects_section" class="jumbotron col-sm-12">
 				<h1>Projects</h1>
 				<ul class="nav nav-pills">
 					<li class="active"><a data-toggle="pill" href="#ochem_buddy">OChem Buddy</a></li>
@@ -47,7 +47,8 @@
 						<h2 class="project_title">OChem Buddy</h2>
 						<a href="https://ochembuddy.herokuapp.com/" target="_blank">View Site</a>
 						<a href="https://github.com/jbadlato/OChemBuddy" target="_blank" class="profile_link"><img class="source_code_link" src="img/github.png" title="Source Code"/></a>
-						<div id="ochem_buddy_carousel" class="carousel slide" data-ride="carousel">
+						<div class="project_visuals">
+						<div id="ochem_buddy_carousel" class="carousel slide col-sm-9" data-ride="carousel">
 							<ol class="carousel-indicators">
 								<li data-target="#ochem_buddy_carousel" data-slide-to="0" class="active"></li>
 								<li data-target="#ochem_buddy_carousel" data-slide-to="1"></li>
@@ -73,9 +74,15 @@
 								<span class="sr-only">Next</span>
 							</a>
 						</div>
-						<p class="project_what"><b>What:</b> A study aid for organic chemistry students that names simple organic molecules.  </p>
-						<p class="project_why"><b>Why:</b> To learn JavaScript, HTML, CSS, and Heroku.  </p>
-						<p class="project_how"><b>How:</b> I built this web app from scratch, using the HTML canvas element to allow the user to draw organic molecules.  As the user draws the molecule, an adjacency list is generated to represent the molecule.  The "Name My Molecule" button starts an algorithm that generates the name of the molecule.  Within the algorithm, many smaller graph theory problems are solved, such as finding the longest path within the graph that does not repeat nodes.  </p>
+						<div class="project_art col-sm-3">
+							<img src="img/chemistry-flask.png">
+						</div>
+						</div>
+						<div class="project_description col-sm-12">
+							<p class="project_what"><b>What:</b> A study aid for organic chemistry students that names simple organic molecules.  </p>
+							<p class="project_why"><b>Why:</b> To learn JavaScript, HTML, CSS, and Heroku.  </p>
+							<p class="project_how"><b>How:</b> I built this web app from scratch, using the HTML canvas element to allow the user to draw organic molecules.  As the user draws the molecule, an adjacency list is generated to represent the molecule.  The "Name My Molecule" button starts an algorithm that generates the name of the molecule.  Within the algorithm, many smaller graph theory problems are solved, such as finding the longest path within the graph that does not repeat nodes.  </p>
+						</div>					
 					</div>
 
 					<div id="markov_rankings" class="tab-pane fade">
@@ -149,7 +156,8 @@
 					</div>
 				</div>
 			</div>
-			<div id="contact_section" class="jumbotron">
+			<hr>
+			<div id="contact_section" class="jumbotron col-sm-12">
 				<h1>Contact Me</h1>
 				<form id="contact_form" class="form-horizontal">
 					<div class="form-group">
