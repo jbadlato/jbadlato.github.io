@@ -1,5 +1,5 @@
 body {
-	background-image: url("https://jbadlato.github.io/img/stone.JPG");
+	background-image: url("img/stone.JPG");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -36,6 +36,39 @@ hr {
 	margin: 2%;
 }
 
+#bio_section {
+}
+
+#bio_section h1 {
+	display: inline;
+}
+
+.jumbotron .title {
+	color: #999;
+	font-size: 80px;
+	text-align: center;
+}
+
+.jumbotron .description {
+	display: none;
+	font-size: 32px;
+}
+
+.description.create {
+	text-align: left;
+	padding-right: 33.33%;
+}
+
+.description.learn {
+	text-align: center;
+	padding: 0 16.67%;
+}
+
+.description.give_back {
+	text-align: right;
+	padding-left: 33.33%;
+}
+
 .project_title {
 	display: inline-block;
 }
@@ -66,6 +99,12 @@ hr {
 
 .project_art img {
 	width: 75%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#success_message {
+	display: none;
 }
 
 #footer {

@@ -16,4 +16,20 @@ $(function() {
 	    $('#contact_form').find("input[type=text], input[type=email], textarea").val("");
 	});
   });
+  $(".title").hover(function(){
+  	$(this).css('color', '#000');
+  	var classList = $(this).attr('class').split(/\s+/);
+  	$.each(classList, function(index, item) {
+  		if (item === 'create') {
+  			$(".create").show();
+  		} else if (item === 'learn') {
+  			$(".learn").show();
+  		} else if (item === 'give_back') {
+  			$(".give_back").show();
+  		}
+  	});
+	},function(){
+		$(this).css('color', '#999');
+		$(".description").hide();
+	});
 });
