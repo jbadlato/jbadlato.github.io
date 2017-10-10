@@ -21,8 +21,15 @@ hr {
 	text-align: center;
 }
 
-#title_section h1, #title_section p {
+#title_section h1 {
 	color: #eee;
+	font-family: 'Cinzel', serif;
+	font-weight: bolder;
+}
+
+#title_section p {
+	color: #eee;
+	font-family: 'Josefin Slab', serif;
 }
 
 #mypic {
@@ -36,16 +43,18 @@ hr {
 	margin: 2%;
 }
 
-#bio_section {
+#bio_section * {
+	font-family: 'Josefin Slab', serif;
 }
 
 #bio_section h1 {
 	display: inline;
+	font-family: 'Cinzel', serif;
 }
 
 .jumbotron .title {
 	color: #999;
-	font-size: 80px;
+	font-size: 72px;
 	text-align: center;
 }
 
@@ -56,17 +65,21 @@ hr {
 
 .description.create {
 	text-align: left;
-	padding-right: 33.33%;
+	padding-right: 50%;
 }
 
 .description.learn {
 	text-align: center;
-	padding: 0 16.67%;
+	padding: 0 25%;
 }
 
 .description.give_back {
 	text-align: right;
-	padding-left: 33.33%;
+	padding-left: 50%;
+}
+
+#projects_section * {
+	font-family: 'Inconsolata', monospace;
 }
 
 .project_title {
@@ -101,6 +114,14 @@ hr {
 	width: 75%;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+}
+
+#contact_section  * {
+	font-family: 'Josefin Slab', serif;
+}
+
+#contact_section h1 {
+	font-family: 'Cinzel', serif;
 }
 
 #success_message {
