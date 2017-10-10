@@ -78,7 +78,7 @@ hr {
 	padding-left: 50%;
 }
 
-#projects_section * {
+#projects_section h1, h2, p, a {
 	font-family: 'Inconsolata', monospace;
 }
 
