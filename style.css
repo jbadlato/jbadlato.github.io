@@ -64,6 +64,10 @@ hr {
 	text-align: center;
 }
 
+.jumbotron .title.create {
+	color: #000;
+}
+
 .jumbotron .description {
 	display: none;
 	font-size: 32px;
@@ -72,6 +76,7 @@ hr {
 .description.create {
 	text-align: left;
 	padding-right: 50%;
+	display: block;
 }
 
 .description.learn {
