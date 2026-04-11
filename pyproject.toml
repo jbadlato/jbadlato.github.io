@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "jbadlato"}]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.14.1 || >3.14.1,<4.0"
 jupyter-book = "^2.1.4"
 ipykernel = "^7.2.0"
 jupyter = "^1.1.1"
@@ -15,6 +15,9 @@ pandas = "^3.0.2"
 matplotlib = "^3.10.8"
 seaborn = "^0.13.2"
 ipdb = "^0.13.13"
+steinernet = "^0.2.0"
+networkx = "^3.6.1"
+scipy = "^1.17.1"
 
 
 [build-system]
