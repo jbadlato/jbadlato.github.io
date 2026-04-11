@@ -8,6 +8,8 @@ packages = [{include = "jbadlato"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+jupyter-book = "^2.1.4"
+ipykernel = "^7.2.0"
 
 
 [build-system]
