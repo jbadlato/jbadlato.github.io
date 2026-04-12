@@ -18,6 +18,7 @@ ipdb = "^0.13.13"
 steinernet = "^0.2.0"
 networkx = "^3.6.1"
 scipy = "^1.17.1"
+more-itertools = "^11.0.2"
 
 
 [build-system]
